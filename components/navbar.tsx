@@ -1,15 +1,20 @@
-import { Button } from "@/components/shadcn/button";
-
+'use client';
+import Image from "next/image";
+import {Button} from "@/components/shadcn/button";
 export default function Navbar(){
     return (
-        <nav className="w-full h-16 bg-[#193C43] flex items-center justify-between px-4">
-            <div className="text-[#F4F3F6] text-xl font-bold">Be Fit ERA</div>
-            <div className="flex items-center gap-4">
-                <Button variant="ghost" className="hover:bg-[#193C43] hover:text-[#F4F3F6] cursor-pointer" size="sm">Home</Button>
-                <Button variant="ghost" className="hover:bg-[#193C43] hover:text-[#F4F3F6] cursor-pointer" size="sm">Events</Button>
-                <Button variant="ghost" className="hover:bg-[#193C43] hover:text-[#F4F3F6] cursor-pointer" size="sm">Activities</Button>
-                <Button variant="ghost" className="hover:bg-[#193C43] hover:text-[#F4F3F6] cursor-pointer" size="sm">FAQ&apos;s</Button>
-                <Button variant="ghost" className="hover:bg-[#193C43] hover:text-[#F4F3F6] cursor-pointer" size="sm">Contact</Button>
+        <nav className="w-full h-28 bg-[#193C43] p-4 flex items-center justify-between">
+            <div className="flex items-center">
+                <Image src="/be-fit-era-logo.png" alt="Be Fit ERA Logo" width={200} height={200} className="mr-2" />
+            </div>
+            <div className="flex space-x-4">
+                <a href="#" className="text-white hover:text-gray-300">Home</a>
+                <a href="#" className="text-white hover:text-gray-300">Events</a>
+                <a href="#" className="text-white hover:text-gray-300">Activities</a>
+                <a href="#" className="text-white hover:text-gray-300">Contact</a>
+            </div>
+            <div>
+                <Button variant="outline" className=" border-white hover:bg-white hover:text-[#193C43]">Sign in</Button>
             </div>
         </nav>
     )
