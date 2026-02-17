@@ -5,7 +5,7 @@ export default function HeroSection() {
     return (
         <section className="w-full bg-[#F4F3F6] border-b-blue-500 px-6 md:px-12 lg:px-16 py-12 md:py-16 lg:py-5 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-8">
             {/* Left Side - Image */}
-            <div className="lg:flex-1 flex justify-center bg-yellow-800 lg:justify-start">
+            <div className="lg:flex-1 flex justify-center lg:justify-start">
                 <Image 
                     src="/running-model.png" 
                     alt="Running Model" 
@@ -16,7 +16,7 @@ export default function HeroSection() {
             </div>
 
             {/* Right Side - Content */}
-            <div className="flex flex-col bg-yellow-800 w-full lg:flex-1">
+            <div className="flex flex-col w-full lg:flex-1">
                 <h1 className="font-raleway font-bold text-3xl md:text-4xl lg:text-4xl text-[#193C43] leading-snug mb-4 md:mb-6">
                     Fitness doesn&apos;t require perfection. It only requires you to begin today.
                 </h1>
