@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Raleway,
+  Merriweather_Sans,
+} from "next/font/google";
 import "../globals.css";
 
 const geistSans = Geist({
@@ -12,9 +17,22 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const raleway = Raleway({
+  variable: "--font-raleway",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+const merriweatherSans = Merriweather_Sans({
+  variable: "--font-merriweather-sans",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
 export const metadata: Metadata = {
   title: "be-fit-era",
-  description: "An event running app for runners to organize/join events and track their running progress.",
+  description:
+    "An event running app for runners to organize/join events and track their running progress.",
 };
 
 export default function RootLayout({
@@ -25,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${raleway.variable} ${merriweatherSans.variable} antialiased`}
       >
         {children}
       </body>
