@@ -8,10 +8,10 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-[#193C43] px-4 sm:px-6 lg:px-8 py-3 sm:py-4 flex items-center justify-between lg:justify-start gap-4 lg:gap-10 relative">
-      <div className="w-20 sm:w-24 lg:w-32 shrink-0">
+    <nav className="w-full bg-[#F4F3F6] px-4 sm:px-6 lg:px-8 py-3 sm:py-4 flex items-center justify-between lg:justify-start gap-4 lg:gap-10 relative">
+      <div className="w-40 sm:w-24 lg:w-32 shrink-0">
         <Image
-          src="/be-fit-era-logo.png"
+          src="/dark-logo-bfe.png"
           alt="Be Fit ERA Logo"
           width={150}
           height={150}
@@ -23,37 +23,37 @@ export default function Navbar() {
       <div className="hidden lg:flex items-center space-x-6 lg:space-x-10 flex-1 justify-end">
         <a
           href="#"
-          className="font-raleway font-bold text-sm lg:text-base text-white hover:text-[#33CCB3] transition-colors"
+          className="font-raleway font-bold text-sm lg:text-base  hover:text-[#33CCB3] transition-colors"
         >
           Home
         </a>
         <a
           href="#"
-          className="font-raleway font-bold text-sm lg:text-base text-white hover:text-[#33CCB3] transition-colors"
+          className="font-raleway font-bold text-sm lg:text-base  hover:text-[#33CCB3] transition-colors"
         >
           Race
         </a>
         <a
           href="#"
-          className="font-raleway font-bold text-sm lg:text-base text-white hover:text-[#33CCB3] transition-colors"
+          className="font-raleway font-bold text-sm lg:text-base  hover:text-[#33CCB3] transition-colors"
         >
           Activities
         </a>
         <a
           href="#"
-          className="font-raleway font-bold text-sm lg:text-base text-white hover:text-[#33CCB3] transition-colors"
+          className="font-raleway font-bold text-sm lg:text-base  hover:text-[#33CCB3] transition-colors"
         >
           FAQs
         </a>
         <a
           href="#"
-          className="font-raleway font-bold text-sm lg:text-base text-white hover:text-[#33CCB3] transition-colors"
+          className="font-raleway font-bold text-sm lg:text-base  hover:text-[#33CCB3] transition-colors"
         >
           Contact
         </a>
         {/* Desktop Sign In Button */}
         <div className="hidden lg:block shrink-0">
-            <Button className="font-raleway font-bold text-sm sm:text-base bg-[#33CCB3] text-white hover:bg-[#2ab89f] transition-colors px-6 sm:px-8 py-2 sm:py-3 rounded-full cursor-pointer">
+            <Button className="font-raleway font-bold text-sm sm:text-base bg-[#F4F3F6] border drop-shadow-[0_3px_4px_#193C43] text-[#193C43] hover:bg-[#e7e6e9] transition-colors px-6 sm:px-8 py-2 sm:py-3 rounded-full cursor-pointer">
             Sign In
             </Button>
         </div>
