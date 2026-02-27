@@ -35,7 +35,7 @@ export default function WhyJoinUs() {
         setFeatures();
     },[]);
     return(
-        <div className="w-full bg-[#F4F3F6] px-4 sm:px-6 md:px-12 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-20 flex flex-col items-center justify-center gap-6 sm:gap-8 lg:gap-10">
+        <div className="w-full bg-[#F4F3F6] px-4 sm:px-6 md:px-12 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-50 flex flex-col items-center justify-center gap-6 sm:gap-8 lg:gap-10">
             <div className="w-full lg:w-3/4 xl:w-2/3 text-center">
                 <h1 className="font-raleway font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#193C43] leading-snug mb-3 sm:mb-4 md:mb-6">
                 Why Join Us? 

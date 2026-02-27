@@ -16,7 +16,7 @@ export default function HeroSection() {
         </div>
 
         {/* Right Side - Content */}
-        <div className="flex flex-col w-full lg:flex-1 xl:mr-70">
+        <div className="flex flex-col w-full lg:flex-1 xl:mr-80">
           <h1 className="font-raleway font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#F4F3F6] leading-snug mb-3 sm:mb-4 md:mb-6">
             Fitness doesn&apos;t require perfection. It only requires you to begin today.
           </h1>

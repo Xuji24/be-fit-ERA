@@ -8,8 +8,8 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-[#F4F3F6] px-4 sm:px-6 lg:px-8 py-3 sm:py-4 flex items-center justify-between lg:justify-start gap-4 lg:gap-10 relative">
-      <div className="w-40 sm:w-24 lg:w-32 shrink-0">
+    <nav className="w-full bg-[#F4F3F6] px-4 sm:px-6 lg:p-8 py-3 sm:py-4 flex items-center justify-between lg:justify-start gap-4 lg:gap-10 relative">
+      <div className="w-40 sm:w-24 lg:w-52 lg:ml-10 shrink-0 absolute left-4 lg:left-0">
         <Image
           src="/dark-logo-bfe.png"
           alt="Be Fit ERA Logo"
