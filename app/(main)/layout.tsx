@@ -6,7 +6,7 @@ import {
   Merriweather_Sans,
 } from "next/font/google";
 import "../globals.css";
-
+import Footer from "@/components/seraui/footer";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -47,6 +47,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${raleway.variable} ${merriweatherSans.variable} antialiased`}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );
