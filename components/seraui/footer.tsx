@@ -96,23 +96,24 @@ const Footer = () => {
         <div className="grid grid-cols-1 grid-rows-1 md:grid-cols-2 md-grid-rows-2 gap-12 py-12 md:py-16">
           {/* Logo and Description Section - Left Side */}
           <div className="col-span-1 p-0">
-            <div className="flex justify-start items-start w-md h-24  row-span-1 bg-red-500 ">
-              <a href="#" className="bg-amber-300 h-full flex justify-start items-center px-2">
-              <Image
-                src="/be-fit-era-logo.png"
-                alt="Be Fit ERA Logo"
-                width={200}
-                height={200}
-              />
+            <div className="mb-4">
+              <a href="#" className="inline-block">
+                <Image
+                  src="/be-fit-era-logo.png"
+                  alt="Be Fit ERA Logo"
+                  width={200}
+                  height={200}
+                  className="w-40 h-auto object-contain"
+                />
               </a>
             </div>
-            <div className="w-md row-span-1 bg-green-500">
+            <div className="max-w-md">
               <p className="text-white text-sm leading-relaxed mb-6">
-              Be Fit ERA encourages people to join running community, to keep
-              healthy and make the most out of running. By achieving goals
-            </p>
+                Be Fit ERA encourages people to join running community, to keep
+                healthy and make the most out of running. By achieving goals
+              </p>
             </div>
-            
+
             {/* Social Icons */}
             <div className="flex gap-3">
               {socialLinks.map((link) => (
